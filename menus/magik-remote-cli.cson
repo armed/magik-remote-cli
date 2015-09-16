@@ -1,0 +1,15 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Magik Remote CLI'
+      'submenu': [
+        {
+          'label': 'Connect'
+          'command': 'magik-remote-cli:connect'
+        }
+      ]
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/behind-atom-keymaps-in-depth
+'atom-workspace':
+  'f2 z': 'magik-remote-cli:connect'
+
+'atom-text-editor[data-grammar="source magik"]':
+  'f2 s': 'magik-remote-cli:send-selection'
+  'f2 b': 'magik-remote-cli:send-buffer'
+  'f2 m': 'magik-remote-cli:send-method'
