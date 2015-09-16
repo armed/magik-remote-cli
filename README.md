@@ -1,3 +1,7 @@
+# WIP
+
+Nothing is working for now
+
 # magik-remote-cli package
 
 A simple package which connects to GE SmallWorld 4.x session as Remote CLI client.
