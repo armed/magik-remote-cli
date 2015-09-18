@@ -1,7 +1,7 @@
 {
   "name": "magik-remote-cli",
   "main": "./lib/magik-remote-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A short description of your package",
   "keywords": [],
   "repository": "https://github.com/armed/magik-remote-cli",
