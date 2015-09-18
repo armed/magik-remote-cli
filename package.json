@@ -1,10 +1,10 @@
 {
   "name": "magik-remote-cli",
   "main": "./lib/magik-remote-cli",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A short description of your package",
   "keywords": [],
-  "repository": "https://github.com/atom/magik-remote-cli",
+  "repository": "https://github.com/armed/magik-remote-cli",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
