@@ -20,32 +20,16 @@ export default class ConnectorComponent {
       }
     })
 
-    this.connector.onOperation(({err, msg}) => {
-      msg = msg.trim()
-      let opts = {
-        detail: msg,
-        dismissable: true
-      }
-      if (err && msg) {
-        atom.notifications.addWarning(err, opts)
-      } else if (msg) {
-        atom.notifications.addInfo('Command executed', opts)
-      }
-    })
-
     this.disposables.add(
       atom.commands.add(this.refs.promptDialog, 'core:confirm', () => {
         this.connector.connect(this.refs.editor.component.getModel().getText(),
           (err, msg) => {
             if (err === 'closed') {
-              console.log(msg)
               this.connected = false
             } else if (err) {
-              console.error(msg)
               this.connected = false
             } else {
               this.connected = true
-              console.log(msg)
             }
             this.update()
             this.close()
