@@ -3,7 +3,6 @@
 
 import etch from 'etch'
 import {TextEditor} from 'atom'
-import DOMListener from 'dom-listener'
 import {CompositeDisposable} from 'atom'
 
 export default class ConnectorComponent {
